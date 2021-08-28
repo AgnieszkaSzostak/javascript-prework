@@ -1,8 +1,12 @@
-var computerMove, randomNumber, argButtonName, playerInput, playerMove;
-var buttonPaper, buttonRock, buttonScissors;
-var playerResult, computerResult;
-var spanPlayerResult, spanComputerResult;
-var buttonReset
+var
+
+    argButtonName,
+    playerInput,
+    playerMove;
+
+
+
+
 
 function displayResult(argPlayerMove, argComputerMove) {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
@@ -51,9 +55,9 @@ function buttonClicked(argButtonName) {
     console.clear();
     console.log('wywołano funkcję buttonClicked z argumentem: ' + argButtonName);
     clearMessages();
-    randomNumber = Math.floor(Math.random() * 3 + 1);
+    let randomNumber = Math.floor(Math.random() * 3 + 1);
     console.log('wylosowana liczba to: ' + randomNumber);
-    computerMove = getMoveName(randomNumber);
+    const computerMove = getMoveName(randomNumber);
     console.log('ruch komputera to: ' + computerMove);
     playerMove = argButtonName;
     console.log('1.playerMove = ' + playerMove);
@@ -79,25 +83,25 @@ function buttonClickedReset() {
   spanPlayerResult.textContent = playerResult;
   spanComputerResult.textContent = computerResult;
 }
-// computerResult = 0;
 
 
-playerResult = 0;
-spanPlayerResult = document.getElementById('playerResult');
+let computerResult = 0,
+    playerResult = 0;
+
+const spanPlayerResult = document.getElementById('playerResult');
 spanPlayerResult.textContent = playerResult;
 
-computerResult = 0;
-spanComputerResult = document.getElementById('computerResult');
+const spanComputerResult = document.getElementById('computerResult');
 spanComputerResult.textContent = computerResult;
 
 console.log('spanPlayerResult =' + spanPlayerResult);
 console.log('spanComputerResult =' + spanComputerResult);
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 console.log('Przypisano do zmiennej buttonRock wartość: ' + buttonRock );
 buttonRock.addEventListener('click', function(){ buttonClicked('button-rock'); });
-buttonPaper = document.getElementById('button-paper');
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function(){ buttonClicked('button-paper'); });
-buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('button-scissors'); });
-buttonReset = document.getElementById('reset');
+const buttonReset = document.getElementById('reset');
 buttonReset.addEventListener('click', function(){ buttonClickedReset()});
