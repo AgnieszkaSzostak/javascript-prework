@@ -1,28 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
   	<meta charset="UTF-8">
   	<title>Kamień, papier, nożyce</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
   	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<div class="container">
-  		<div id="buttons">
-        <button id="button-rock" type="button">Kamień</button>
-        <button id="button-paper" type="button">Papier</button>
-        <button id="button-scissors" type="button">Nożyce</button>
-      </div>
-  		<div id="messages"></div>
       <div id="result" class="result">
-        <span id="playerResult" class="playerResult"></span>
-        <span>-</span>
-        <span id="computerResult" class="computerResult"></span>
+        <div class="col">
+          <span>Gracz</span>
+          <span id="playerResult" class="playerResult"></span>
+        </div>
+        <div class="col">
+          <span>Komputer</span>
+          <span id="computerResult" class="computerResult"></span>
+        </div>
       </div>
-      <div class="">
-        <button id="reset" type="button" name="button">Reset</button>
+      <div class="letsPlay">
+        <h1>Zagrajmy!</h1>
+        <p>Wybierz swój ruch.</p>
       </div>
-  	</div>
-  	<script src="js/functions.js"></script>
-  	<script src="js/script.js"></script>
+      <div class="main">
+    		<div id="buttons" class="buttons">
+          <button id="button-rock" type="button">Kamień
+            <i class="fas fa-hand-rock"></i>
+          </button>
+          <button id="button-paper" type="button">Papier
+            <i class="fas fa-hand-paper"></i>
+          </button>
+          <button id="button-scissors" type="button">Nożyce
+            <i class="fas fa-hand-scissors"></i>
+          </button>
+        </div>
+    		<div id="messages">
+        </div>
+        <div class="">
+          <button class="reset"id="reset" type="button" name="button">Reset</button>
+        </div>
+      </div>
+    </div>
+	<script src="js/functions.js"></script>
+	<script src="js/script.js"></script>
   </body>
 </html>

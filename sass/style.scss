@@ -1,0 +1,111 @@
+$font1: 'ZCOOL KuaiLe', cursive;
+$color-background: #e5dada;
+$color-font: white;
+$color-button: #840032;
+$color: #002642;
+$color2: #e59500;
+$color3: #02040f;
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+
+}
+
+body {
+  margin: 0;
+  font-family: $font1;
+  color: $color-font;
+
+}
+
+.container {
+  background-color: $color-background;
+  margin: 0 auto;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+
+}
+
+
+/* Results */
+
+.result {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $color-button;
+  border: 2px solid $color;
+  border-radius: 15px;
+  color: $color3;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  .playerResult,
+  .computerResult {
+
+  }
+  .playerResult{
+
+  }
+  .col {
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      flex: 100%;
+    }
+  }
+}
+
+.letsPlay{
+  color: $color3;
+}
+.main {
+  background-color: $color2;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid $color;
+  border-radius: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+  button {
+    flex: 1;
+
+  }
+}
+button {
+  max-width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: $color-button;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 18px;
+  // border-style: solid;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+
+}
+  .fas {
+    font-size: 25px;
+    display: block;
+    padding-top: 8px;
+  }
+
+.reset {
+  border-radius: 10px;
+}
