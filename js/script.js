@@ -42,6 +42,7 @@ function getMoveName(argMoveId) {
 //Computer move
 
 function buttonClicked(argButtonName) {
+
     let playerMove = argButtonName;
     const randomNumber = Math.floor(Math.random() * 3 + 1),
           computerMove = getMoveName(randomNumber);
@@ -69,7 +70,7 @@ function buttonClicked(argButtonName) {
 
 function buttonClickedReset() {
   const playerResult = 0,
-        computerResult = 0;
+      computerResult = 0;
   spanPlayerResult.textContent = playerResult,
   spanComputerResult.textContent = computerResult;
 }
