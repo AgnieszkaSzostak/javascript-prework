@@ -69,8 +69,8 @@ function buttonClicked(argButtonName) {
 }
 
 function buttonClickedReset() {
-  const playerResult = 0,
-      computerResult = 0;
+  playerResult = 0;
+  computerResult = 0;
   spanPlayerResult.textContent = playerResult,
   spanComputerResult.textContent = computerResult;
 }
