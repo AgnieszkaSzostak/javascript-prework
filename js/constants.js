@@ -1,0 +1,13 @@
+let computerResult = 0;
+let playerResult = 0;
+const spanPlayerResult = document.getElementById('playerResult');
+const spanComputerResult = document.getElementById('computerResult');
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
+const buttonReset = document.getElementById('reset');
+spanPlayerResult.textContent = playerResult;
+spanComputerResult.textContent = computerResult;
+const paper = 'papier';
+const rock = 'kamień';
+const scissors = 'nożyce';
